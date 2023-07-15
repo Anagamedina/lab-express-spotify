@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="list-group">
+        {{#each tracks}}
+        <div class="list-group-item">
+            <div class="d-flex align-items-center">
+                <span class="mr-3">{{this.name}} -</span>
+                <audio controls class="flex-grow-1">
+                    <source src="{{this.preview_url}}" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
